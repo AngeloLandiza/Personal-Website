@@ -8,8 +8,8 @@ export const site = {
   github: "https://github.com/AngeloLandiza",
   linkedin: "https://www.linkedin.com/in/angelo-landiza/",
   resume: "/Angelo-Landiza-Resume.pdf",
-  // Set this to your custom domain once you have it (used for SEO metadata).
-  url: "https://angelolandiza.com",
+  // Custom domain (used for SEO metadata, sitemap, and robots).
+  url: "https://alandiza.tech",
   description:
     "Software Engineer Intern at Morningstar building full-stack RAG platforms and auto-scaling AWS infrastructure. Data Science student at the University of Illinois Chicago.",
 };
