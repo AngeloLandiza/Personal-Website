@@ -13,7 +13,7 @@ export function Skills() {
           <Reveal key={group.label} delay={i * 40}>
             <div className="grid gap-2 sm:grid-cols-[11rem_1fr] sm:gap-8">
               <p className="pt-1 font-mono text-sm text-faint">{group.label}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap content-start items-start gap-2">
                 {group.items.map((item) => (
                   <span
                     key={item}
