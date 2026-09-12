@@ -53,6 +53,7 @@ export const experience: Role[] = [
       "Co-developed a proposed investment-quality metric and built its prototype — presented to the CEO, CTO, and senior leadership, now in company-wide research for implementation.",
       "Engineered the core logic of a regression-testing suite (CDK + SQS) that batch-queues pipeline runs and computes recall and F1 across variants to drive improvements.",
       "Built and debugged Harness CI/CD pipelines deploying to Kubernetes for staging and production releases, and a New Relic performance dashboard for Illume Studio tracking p50/p95 page load, API latency and failure rate, and JS errors.",
+      "Retained for a fall-term extension, shipping platform features alongside a full course load.",
     ],
     stack: [
       "Python",
@@ -72,6 +73,7 @@ export const experience: Role[] = [
     location: "Chicago, IL",
     bullets: [
       "Directed a high-school robotics internship, assigning 17 students to projects optimizing FRC and FTC robot performance.",
+      "Developed curriculum covering robotics programming, computer vision, and autonomous navigation.",
     ],
     stack: ["Java", "Python", "OpenCV", "WPILib"],
   },
@@ -82,6 +84,7 @@ export const experience: Role[] = [
     location: "Chicago, IL",
     bullets: [
       "Built Java software with the WPILib framework for an autonomous swerve-drive FRC robot.",
+      "Implemented a random maze generator and applied the A* algorithm to find optimal solutions.",
       "Constructed a neural network from scratch in Python.",
     ],
     stack: ["Java", "WPILib", "Python"],
