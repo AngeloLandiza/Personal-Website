@@ -52,8 +52,8 @@ export default function OpenGraphImage() {
             maxWidth: 900,
           }}
         >
-          Full-stack RAG platforms · Auto-scaling AWS infrastructure · LLM
-          systems
+          Full-stack RAG platforms · LLM pipelines · Auto-scaling AWS
+          infrastructure
         </div>
       </div>
     ),

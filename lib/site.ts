@@ -11,14 +11,15 @@ export const site = {
   // Custom domain (used for SEO metadata, sitemap, and robots).
   url: "https://alandiza.tech",
   description:
-    "Software Engineer Intern at Morningstar building full-stack RAG platforms and auto-scaling AWS infrastructure. Data Science student at the University of Illinois Chicago.",
+    "Software Engineer Intern at Morningstar building LLM-powered rule pipelines, full-stack RAG platforms, and auto-scaling AWS infrastructure. Data Science student at the University of Illinois Chicago.",
 };
 
 export const hero = {
   intro: [
     `I'm a Software Engineer Intern at Morningstar, where I build full-stack
-    RAG platforms and auto-scaling AWS infrastructure for LLM systems used by
-    thousands of people across the globe.`,
+    RAG platforms, auto-scaling AWS infrastructure, and LLM pipelines — including
+    the production rewrite of an AI rule builder that turns analysts'
+    plain-English data-quality rules into executable configs.`,
     `I study Data Science with a Computer Science concentration at the
     University of Illinois Chicago — and I've been shipping software since my
     FRC robotics days, from reinforcement-learning robots to production
@@ -44,14 +45,25 @@ export const experience: Role[] = [
     period: "Mar 2026 — Present",
     location: "Chicago, IL",
     bullets: [
+      "Own the production v2 rewrite of the team's AI rule builder, which turns analysts' plain-English data-quality rules into executable rule configs through a five-stage pipeline: the LLM only proposes structure, gated by verbatim evidence grounding, registry type-checks, deterministic compilation, and human resolution of ambiguous datapoints.",
+      "Built its evaluation harness, grading LLM output by semantic equivalence to hand-parsed ground truth and requiring refusal on underspecified prompts, with per-call cost accounting and SSM-backed secrets handling.",
       "Architected auto-scaling AWS infrastructure (CDK, Fargate, ALB) for a full-stack RAG chatbot, with DynamoDB powering real-time user sessions and low-latency LLM context retrieval.",
       "Ship UI features and REST APIs for Illume 2.0, a modular RAG document-extraction platform serving 2,000+ non-technical users across 5 global offices.",
       "Cut data-collection turnaround from a ~5-week manual JSON build-and-test cycle to under a minute with UI-driven pipeline configuration, across 1,000+ financial documents per workflow.",
       "Co-developed a proposed investment-quality metric and built its prototype — presented to the CEO, CTO, and senior leadership, now in company-wide research for implementation.",
       "Engineered the core logic of a regression-testing suite (CDK + SQS) that batch-queues pipeline runs and computes recall and F1 across variants to drive improvements.",
-      "Retained for a fall-term extension, shipping platform features alongside a full course load.",
+      "Built and debugged Harness CI/CD pipelines deploying to Kubernetes for staging and production releases, and a New Relic performance dashboard for Illume Studio tracking p50/p95 page load, API latency and failure rate, and JS errors.",
     ],
-    stack: ["Python", "TypeScript", "AWS CDK", "DynamoDB", "ECS Fargate", "RAG"],
+    stack: [
+      "Python",
+      "TypeScript",
+      "AWS CDK",
+      "DynamoDB",
+      "ECS Fargate",
+      "Kubernetes",
+      "RAG · LLM",
+      "New Relic",
+    ],
   },
   {
     company: "CPS Office of Computer Science",
@@ -60,7 +72,6 @@ export const experience: Role[] = [
     location: "Chicago, IL",
     bullets: [
       "Directed a high-school robotics internship, assigning 17 students to projects optimizing FRC and FTC robot performance.",
-      "Developed curriculum covering robotics programming, computer vision, and autonomous navigation.",
     ],
     stack: ["Java", "Python", "OpenCV", "WPILib"],
   },
@@ -71,7 +82,6 @@ export const experience: Role[] = [
     location: "Chicago, IL",
     bullets: [
       "Built Java software with the WPILib framework for an autonomous swerve-drive FRC robot.",
-      "Implemented a random maze generator and applied the A* algorithm to find optimal solutions.",
       "Constructed a neural network from scratch in Python.",
     ],
     stack: ["Java", "WPILib", "Python"],
@@ -186,15 +196,15 @@ export const skills: { label: string; items: string[] }[] = [
   },
   {
     label: "Cloud & Infrastructure",
-    items: ["AWS", "DynamoDB", "S3", "SQS", "ECS", "ECR", "ALB"],
+    items: ["AWS", "DynamoDB", "S3", "SQS", "ECS", "ECR", "ALB", "Kubernetes"],
   },
   {
     label: "Tools",
-    items: ["Git", "Jira", "Bitbucket", "Harness", "Postman"],
+    items: ["Git", "Jira", "Bitbucket", "Harness", "New Relic", "Postman"],
   },
   {
     label: "Architectures & Methods",
-    items: ["REST APIs", "RAG", "Agile (Scrum)"],
+    items: ["REST APIs", "RAG", "CI/CD", "Agile (Scrum)"],
   },
 ];
 
