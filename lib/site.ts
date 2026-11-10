@@ -20,8 +20,9 @@ export const hero = {
     RAG platforms, auto-scaling AWS infrastructure, and LLM pipelines — including
     the production rewrite of an AI rule builder that turns analysts'
     plain-English data-quality rules into executable configs.`,
-    `I study Data Science with a Computer Science concentration at the
-    University of Illinois Chicago — and I've been shipping software since my
+    `I study Data Science with a Computer Science concentration and a
+    Management Information Systems minor at the University of Illinois
+    Chicago — and I've been shipping software since my
     FRC robotics days, from reinforcement-learning robots to production
     document-extraction pipelines.`,
   ],
@@ -213,7 +214,8 @@ export const skills: { label: string; items: string[] }[] = [
 
 export const education = {
   school: "University of Illinois Chicago",
-  degree: "B.S. in Data Science, Computer Science concentration",
+  degree:
+    "B.S. in Data Science, Computer Science concentration · Minor in Management Information Systems",
   period: "Expected May 2028",
   location: "Chicago, IL",
 };
